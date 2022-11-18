@@ -1,0 +1,293 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Technologies'>
+  <Header made='inactive' tech />
+  <div class='container'>
+    <h1><span class='gold'>The technologies</span> we use</h1>
+    <h2>And who else use them</h2>
+    <div class='seccion'>
+      <div class='articulo'>
+        <h2>Next JS</h2>
+        <hr />
+        <ul>
+          <li>
+            <a
+              href='https://vercel.com'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Vercel
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://m.twitch.tv'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Twitch
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://www.hulu.com'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Hulu
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://notion.com'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Notion
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://www.hbomax.com'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              HBO Max
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://www.audible.com/about'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Audible
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://nextjs.org/showcase'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              More...
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class='articulo'>
+        <h2>React Js</h2>
+        <hr />
+        <ul>
+          <li>
+            <a
+              href='https://www.facebook.com'
+              target='_blank'
+              rel='noreferrer noopener'>Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://www.instagram.com'
+              target='_blank'
+              rel='noreferrer noopener'>Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://twitter.com'
+              target='_blank'
+              rel='noreferrer noopener'>Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://www.reddit.com'
+              target='_blank'
+              rel='noreferrer noopener'>Reddit</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://www.netflix.com'
+              target='_blank'
+              rel='noreferrer noopener'>Netflix</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://www.paypal.com'
+              target='_blank'
+              rel='noreferrer noopener'>PayPal</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://github.com'
+              target='_blank'
+              rel='noreferrer noopener'>GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://www.nytimes.com'
+              target='_blank'
+              rel='noreferrer noopener'>New York Times</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://www.bbc.com'
+              target='_blank'
+              rel='noreferrer noopener'>BBC</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class='articulo'>
+        <h2>Astro</h2>
+        <hr />
+        <ul>
+          <li>
+            <a
+              href='https://nordvpn.org'
+              target='_blank'
+              rel='noreferrer noopener'>Nord VPN</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://hackurity.io'
+              target='_blank'
+              rel='noreferrer noopener'>Hackurity.io</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://linkhub.online'
+              target='_blank'
+              rel='noreferrer noopener'>Linkhub</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://techwards.co'
+              target='_blank'
+              rel='noreferrer noopener'>Techwards</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://osintonchina.com'
+              target='_blank'
+              rel='noreferrer noopener'>Osint on China</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://amelitegame.com'
+              target='_blank'
+              rel='noreferrer noopener'>Amelite</a
+            >
+          </li>
+          <li>
+            <a
+              href='https://astro.build/showcase'
+              target='_blank'
+              rel='noreferrer noopener'>More...</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .container h2 {
+    text-align: center;
+  }
+  .seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70vw;
+  }
+  .articulo {
+    border: 2px solid black;
+    padding: 1vw;
+    margin: 1vh 1px;
+  }
+  .articulo ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 30vh;
+  }
+  .articulo:nth-child(even) ul {
+    min-height: 40vh;
+    width: 30vw;
+    margin: 3vh 1px;
+  }
+  .articulo ul li {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: all ease-in 0.5s;
+    margin: 3px 0;
+  }
+  .articulo ul li:hover a {
+    text-decoration: underline 3px #bd8b28;
+  }
+  .gold {
+    color: #bd8b28;
+    text-shadow: 0 0 1px #ffd700;
+  }
+  @media (max-width: 600px) {
+    .articulo {
+      border: 2px solid black;
+      margin: 3vh 0;
+      padding: 3vw;
+    }
+    .seccion {
+      flex-direction: column;
+    }
+    .articulo:nth-child(even) ul {
+      width: 70vw;
+      min-height: 40vh;
+    }
+    .articulo ul {
+      text-align: center;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .container {
+      background: #111;
+      color: #f5f5f5;
+    }
+    .articulo {
+      border-color: #fff;
+    }
+  }
+</style>

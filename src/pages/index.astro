@@ -1,0 +1,313 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Welcome to Astro.'>
+  <Header tech={false} made='inactive' />
+  <div class='container'>
+    <h1>We make websites</h1>
+    <h2>The best websites.</h2>
+    <div class='seccion'>
+      <div class='articulo'>
+        <h2>Experts in:</h2>
+        <hr />
+        <ul>
+          <li>
+            <span>Next JS</span>
+          </li>
+          <li>
+            <span>Astro</span>
+          </li>
+          <li>
+            <span>React</span>
+          </li>
+          <li>
+            <span>Vanilla Js</span>
+          </li>
+          <li>
+            <span>JQuery</span>
+          </li>
+          <li>
+            <span>ThreeJs</span>
+          </li>
+          <li>
+            <span class='gold'>SEO</span>
+          </li>
+        </ul>
+      </div>
+      <div class='articulo'>
+        <h2>6 reasons why we don't use CMS</h2>
+        <h4>WordPress | Drupal | Joomla...</h4>
+        <hr />
+        <ul>
+          <li>
+            <span>Security Risks</span>
+            <p>The templates are more likely to be attacked by hackers</p>
+          </li>
+          <li>
+            <span>Limited design</span>
+            <p>
+              The templates are not fully customizable, only some parts of them
+            </p>
+          </li>
+          <li>
+            <span>Loading problems</span>
+            <p>They will always be heavier and less optimized</p>
+          </li>
+          <li>
+            <span>Unprofessional</span>
+            <p>Anyone has access to the exact same templates that you</p>
+          </li>
+          <li>
+            <span>Limited Resources</span>
+            <p>
+              There are some functionalities or processes that a CMS can't
+              manage without write code
+            </p>
+          </li>
+          <li>
+            <span class='gold'>Harder to position</span>
+            <p>
+              They are much less optimized and their loading times are less
+              predictable
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class='articulo'>
+        <h2>What we offer?</h2>
+        <hr />
+        <ul>
+          <li>
+            <span>100% customization</span>
+          </li>
+          <li>
+            <span>Effective SEO strategy</span>
+          </li>
+          <li>
+            <span>+90 in LightHouse</span>
+          </li>
+          <li>
+            <span class='gold'>Server Side Rendering</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class='info'>
+      <h2>
+        Our <span class='gold'>SEO</span>
+      </h2>
+      <article>
+        <span>Structured Data</span>
+        <p>
+          Json/ld is an structured json format easy-to-write for people and very
+          <i>intuitive</i> for the google-bot, which checks the pages website to
+          index them.
+          <br />
+          This makes the page easily indexable, and, with that, is easy to appear
+          in media carousels that appear in certain searches: recipes, products,
+          etc.
+        </p>
+      </article>
+      <article>
+        <span>Validation by the standard</span>
+        <p>
+          W3C is an international consortium that makes recommendations and
+          standards. It is the most prestigious at the web level and one of the
+          older ones. It gives, at the structure level, recommendations on good
+          practices, and it is on these that google is based to determine how
+          <i>clean</i> or well structured is your website. Although this is not very
+          relevant for SEO, we consider that these details are the ones that, in
+          the moment of truth, they add up.
+        </p>
+      </article>
+      <article>
+        <span>SSR</span>
+        <p>
+          SSR or Server Side Rendering is the most efficient way to boost your
+          website speed (only behind static files). This happens because when
+          the site begins to load, the request is made to the server and it
+          generates statics, which as we have said, it is the fastest way to
+          load a site. This also helps the <i>crawler</i> or google-bot to crawl
+          our site the first time, because if it was pure or some relevant javascript,
+          it would go around twice and the page will lose some score.
+        </p>
+      </article>
+      <article>
+        <span class='gold'>The TECHNIQUE</span>
+        <p>
+          We also have the biggest SEO secret, the infallible technique for
+          position the pages of our clients as high as possible:
+          <span class='gold'>the final user first, then the crawler</span>
+          It would be silly to do it in another way, because it's more important
+          the sensation and impression the user will have than the google bot. If
+          we make a more day-to-day situation, the concept would be better understood:
+          Would you treat well only the critic of food that comes to your restaurant
+          and would you leave aside customer service? I think not, you would treat
+          them all the same, but you only would give the critic a deal a little better
+          and we achieve that with the points we have already discussed (in especially
+          with structured data)
+        </p>
+      </article>
+    </section>
+  </div>
+</Layout>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .container h2 {
+    text-align: center;
+  }
+  .seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70vw;
+  }
+  .seccion h4 {
+    text-align: center;
+  }
+  .articulo {
+    border: 2px solid black;
+    padding: 1vw;
+    margin: 0 1px;
+  }
+  .articulo ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 30vh;
+  }
+  .articulo:nth-child(even) ul {
+    min-height: 40vh;
+    width: 30vw;
+  }
+  .articulo ul li {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: all ease-in 0.5s;
+    margin: 3px 0;
+  }
+  .articulo ul li p {
+    width: 60%;
+    display: none;
+  }
+  .articulo ul li:hover span {
+    text-decoration: underline 3px #bd8b28;
+  }
+  .articulo ul li:hover > p {
+    display: block;
+    background-color: #80808080;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 3px;
+    text-decoration: none;
+    margin: 3px 0 5px 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 7vh;
+  }
+  .info h2 {
+    width: 100%;
+  }
+  .info article {
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    margin: 2vh;
+    padding: 1vw;
+  }
+  .info article > span {
+    width: 100%;
+    font-weight: 900;
+    font-size: 1.3em;
+  }
+  .info p {
+    margin-top: 2vh;
+    text-align: left;
+    width: 100%;
+  }
+  .info article:last-child {
+    width: 35%;
+  }
+  .info article:last-child p {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .info article:last-child p > span {
+    margin: 3px 0;
+    padding: 3px;
+  }
+  .gold {
+    color: #bd8b28;
+    text-shadow: 0 0 1px #ffd700;
+  }
+  @media (max-width: 600px) {
+    .articulo {
+      border: 2px solid black;
+      margin: 3vh 0;
+      padding: 3vw;
+    }
+    .seccion {
+      flex-direction: column;
+    }
+    .articulo:nth-child(even) ul {
+      width: 70vw;
+      min-height: 40vh;
+    }
+    .articulo ul li p {
+      user-select: none;
+    }
+    .articulo ul li span {
+      user-select: all;
+    }
+    .articulo ul {
+      text-align: center;
+    }
+    .info {
+      flex-direction: column;
+    }
+    .info article {
+      padding: 1vh;
+      width: 77vw;
+    }
+    .info article:last-child {
+      width: 80vw;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .container {
+      background: #111;
+      color: #f5f5f5;
+    }
+    .articulo,
+    .info article {
+      border-color: #fff;
+    }
+  }
+</style>
